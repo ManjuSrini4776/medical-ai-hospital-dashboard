@@ -1,0 +1,40 @@
+{
+    "P001": {
+        "doctor_id": "D005",
+        "tests": {
+            "ultrasound": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P001/ultrasound.png",
+            "blood_test": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P001/blood_test.pdf"
+        }
+    },
+    "P002": {
+        "doctor_id": "D002",
+        "tests": {
+            "ultrasound": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P002/ultrasound.png",
+            "urine_test": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P002/urine_test.pdf"
+        }
+    },
+    "P003": {
+        "doctor_id": "D003",
+        "tests": {
+            "sugar_test": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P003/sugar_test.pdf"
+        }
+    },
+    "P004": {
+        "doctor_id": "D006",
+        "tests": {
+            "thyroid_test": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P004/thyroid_test.pdf"
+        }
+    },
+    "P005": {
+        "doctor_id": "D003",
+        "tests": {
+            "bp_test": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P005/bp_test.pdf"
+        }
+    },
+    "P006": {
+        "doctor_id": "D001",
+        "tests": {
+            "ct_scan": "/content/drive/MyDrive/Medical_AI_Hospital_Project/hospital_results/P006/ct_scan.jpg"
+        }
+    }
+}

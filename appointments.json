@@ -1,0 +1,9 @@
+{
+    "P006": {
+        "patient_id": "P006",
+        "doctor_id": "D001",
+        "date": "2025-12-03",
+        "time": "10:00 AM",
+        "status": "Scheduled"
+    }
+}

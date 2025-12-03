@@ -1,0 +1,32 @@
+{
+    "D001": {
+        "name": "Dr. Kumar",
+        "department": "Radiology",
+        "available": true
+    },
+    "D004": {
+        "name": "Dr. Senthil",
+        "department": "Radiology",
+        "available": true
+    },
+    "D002": {
+        "name": "Dr. Rani",
+        "department": "Gynecology",
+        "available": true
+    },
+    "D005": {
+        "name": "Dr. Nithya",
+        "department": "Gynecology",
+        "available": true
+    },
+    "D003": {
+        "name": "Dr. Arjun",
+        "department": "General Medicine",
+        "available": true
+    },
+    "D006": {
+        "name": "Dr. PriyaShree",
+        "department": "General Medicine",
+        "available": true
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "P001": {
+        "patient_id": "P001",
+        "patient_name": "Priya",
+        "doctor_id": "D005",
+        "symptoms": "Pregnancy 5th month",
+        "tests_ordered": [
+            "ultrasound",
+            "blood_test"
+        ],
+        "ai_results": {
+            "ultrasound": {
+                "predicted_plane": "Fetal abdomen",
+                "confidence": 1.0
+            },
+            "blood_test": {
+                "fasting_glucose": 71.0,
+                "postprandial_glucose": 91.0,
+                "hba1c": 5.3,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal",
+        "status": "Approved",
+        "rag_explanation": "--- Test: ultrasound ---\nAI result summary:\n- Detected plane: Fetal abdomen (confidence 1.00)\n\nRelevant guideline summary:\nFetal Ultrasound Planes \u2013 Interpretation & Actions (Contextual)\n\n1. Planes in your model:\n   \u2022 Fetal brain\n   \u2022 Fetal abdomen\n   \u2022 Fetal femur\n   \u2022 Fetal thorax\n\n2. Fetal brain plane:\n   \u2022 Used to assess brain structures, ventricles, midline, etc.\n   \u2022 Normal AI detection of plane only confirms that the correct view is captured, not that the anatomy is normal.\n   - Clinical action:\n     \u2022 If plane is correctly captured and no obvious abnormality is seen, continue routine antenatal care.\n     \u2022 If clinically suspected risk (e.g., prior anomaly, infections), detailed anomaly scan or fetal medicine referral may be needed.\n\n3. Fetal abdomen plane:\n   \u2022 Used for abdominal circumference, organs, and growth assessment.\n   - Clinical action:\n     \u2022 If plane captured and basic evaluation is normal, routine follow-up.\n     \u2022 Abnormal findings (if any) must be interpreted by radiologist / fetal medicine specialist.\n\n4. Fetal thorax plane:\n   \u2022 Shows heart and lungs region.\n   - Clinical action:\n     \u2022 Routine follow-up if heart and lungs appear normal.\n     \u2022 If structural heart disease suspected, fetal echocardiography referral.\n\n5. Fetal femur plane:\n   \u2022 Used for fetal femur length and growth assessment.\n   - Clinical action:\n     \u2022 If length appears consistent with gestational age, no special action.\n     \u2022 If short femur or growth restriction suspected, further evaluation for IUGR or genetic conditions may be needed.\n\nIMPORTANT:\n   \u2022 Your AI model only detects the plane type (brain/abdomen/thorax/femur), not detailed anomalies.\n   \u2022 Final interpretation is always by a qualified radiologist or obstetrician.\n--- Test: blood_test ---\nAI result summary:\n- Parsed lab data: {'fasting_glucose': 71.0, 'postprandial_glucose': 91.0, 'hba1c': 5.3, 'severity': 'Normal'}\n- Lab severity: Normal\n\nRelevant guideline summary:\nDiabetes \u2013 Clinical Interpretation & Actions\n\n1. Key lab values:\n   \u2022 Fasting Plasma Glucose (FPG):\n     - Normal: < 100 mg/dL\n     - Prediabetes: 100\u2013125 mg/dL\n     - Diabetes: \u2265 126 mg/dL (on two separate occasions)\n   \u2022 Postprandial Glucose (PPG, 2 hours after meal):\n     - Normal: < 140 mg/dL\n     - Prediabetes: 140\u2013199 mg/dL\n     - Diabetes: \u2265 200 mg/dL\n   \u2022 HbA1c:\n     - Normal: < 5.7%\n     - Prediabetes: 5.7\u20136.4%\n     - Diabetes: \u2265 6.5%\n\n2. Mild abnormality (Prediabetes):\n   - Typical pattern: borderline high fasting or PP or HbA1c in 5.7\u20136.4 range.\n   - Clinical action:\n     \u2022 Lifestyle advice (diet, exercise, weight control).\n     \u2022 Repeat test in 3\u20136 months.\n     \u2022 Consider early endocrinology referral if strong family history, obesity, or other risk factors.\n\n3. Severe abnormality (Diabetes range):\n   - Any of:\n     \u2022 FPG \u2265 126 mg/dL\n     \u2022 PP \u2265 200 mg/dL\n     \u2022 HbA1c \u2265 6.5%\n   - Clinical action:\n     \u2022 Confirm with repeat test (if not already confirmed).\n     \u2022 Start diabetes management plan as per local protocol.\n     \u2022 Refer to diabetologist / general physician.\n     \u2022 Educate patient about diet, foot care, eye screening, and regular follow-up.\n\n4. When values are fully normal:\n   - Clinical action:\n     \u2022 Reassure patient.\n     \u2022 Advise routine annual checkup if risk factors present.\n     \u2022 If patient is already diabetic on treatment but results are normal, continue same medication and follow-up schedule unless symptoms suggest otherwise.\n\nOverall AI severity for this patient: Normal\nNOTE: This is clinical decision support, final decision is by the doctor.",
+        "approved_by": "D005"
+    },
+    "P002": {
+        "patient_id": "P002",
+        "patient_name": "Durga",
+        "doctor_id": "D002",
+        "symptoms": "Lower abdominal pain",
+        "tests_ordered": [
+            "ultrasound",
+            "urine_test"
+        ],
+        "ai_results": {
+            "ultrasound": {
+                "predicted_plane": "Fetal abdomen",
+                "confidence": 1.0
+            },
+            "urine_test": {
+                "pH": "6.7",
+                "specific_gravity": "1.01",
+                "protein": "Negative",
+                "sugar": "Negative",
+                "ketones": null,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal",
+        "status": "Pending Review",
+        "rag_explanation": "--- Test: ultrasound ---\nAI result summary:\n- Detected plane: Fetal abdomen (confidence 1.00)\n\nRelevant guideline summary:\nFetal Ultrasound Planes \u2013 Interpretation & Actions (Contextual)\n\n1. Planes in your model:\n   \u2022 Fetal brain\n   \u2022 Fetal abdomen\n   \u2022 Fetal femur\n   \u2022 Fetal thorax\n\n2. Fetal brain plane:\n   \u2022 Used to assess brain structures, ventricles, midline, etc.\n   \u2022 Normal AI detection of plane only confirms that the correct view is captured, not that the anatomy is normal.\n   - Clinical action:\n     \u2022 If plane is correctly captured and no obvious abnormality is seen, continue routine antenatal care.\n     \u2022 If clinically suspected risk (e.g., prior anomaly, infections), detailed anomaly scan or fetal medicine referral may be needed.\n\n3. Fetal abdomen plane:\n   \u2022 Used for abdominal circumference, organs, and growth assessment.\n   - Clinical action:\n     \u2022 If plane captured and basic evaluation is normal, routine follow-up.\n     \u2022 Abnormal findings (if any) must be interpreted by radiologist / fetal medicine specialist.\n\n4. Fetal thorax plane:\n   \u2022 Shows heart and lungs region.\n   - Clinical action:\n     \u2022 Routine follow-up if heart and lungs appear normal.\n     \u2022 If structural heart disease suspected, fetal echocardiography referral.\n\n5. Fetal femur plane:\n   \u2022 Used for fetal femur length and growth assessment.\n   - Clinical action:\n     \u2022 If length appears consistent with gestational age, no special action.\n     \u2022 If short femur or growth restriction suspected, further evaluation for IUGR or genetic conditions may be needed.\n\nIMPORTANT:\n   \u2022 Your AI model only detects the plane type (brain/abdomen/thorax/femur), not detailed anomalies.\n   \u2022 Final interpretation is always by a qualified radiologist or obstetrician.\n--- Test: urine_test ---\nAI result summary:\n- Parsed lab data: {'pH': '6.7', 'specific_gravity': '1.01', 'protein': 'Negative', 'sugar': 'Negative', 'ketones': None, 'severity': 'Normal'}\n- Lab severity: Normal\n\nRelevant guideline summary:\nUrine Report \u2013 Interpretation & Actions\n\n1. Key parameters commonly reported:\n   \u2022 pH\n   \u2022 Specific Gravity\n   \u2022 Protein\n   \u2022 Sugar\n   \u2022 Ketones\n   \u2022 Microscopy (RBCs, WBCs, epithelial cells, casts, crystals)\n\n2. Normal urine:\n   \u2022 Protein: Negative\n   \u2022 Sugar: Negative\n   \u2022 Ketones: Negative\n   \u2022 pH: Usually ~5.5\u20137.0\n   \u2022 Specific Gravity: ~1.005\u20131.030 (depends on hydration)\n\n3. Mild abnormality:\n   \u2022 Trace or 1+ protein or sugar.\n   \u2022 Few WBCs/RBCs.\n   \u2022 Slightly altered pH or specific gravity.\n   - Clinical action:\n     \u2022 Correlate with symptoms (burning micturition, frequency).\n     \u2022 Encourage hydration.\n     \u2022 Consider repeat test or urine culture if UTI is suspected.\n     \u2022 Non-urgent follow-up.\n\n4. Severe abnormality:\n   \u2022 Protein \u2265 2+ or 3+.\n   \u2022 Sugar \u2265 2+.\n   \u2022 Presence of significant ketones.\n   \u2022 Heavy pyuria or hematuria.\n   - Clinical action:\n     \u2022 Evaluate for renal disease, uncontrolled diabetes, or severe infection.\n     \u2022 Refer to physician / nephrologist.\n     \u2022 Additional tests (renal function tests, ultrasound, culture) as appropriate.\n\n5. When report is fully normal:\n   \u2022 Clinical action:\n     \u2022 Reassure patient.\n     \u2022 No specific treatment needed.\n     \u2022 If symptoms persist despite normal report, consider non-urinary causes.\n\nOverall AI severity for this patient: Normal\nNOTE: This is clinical decision support, final decision is by the doctor."
+    },
+    "P003": {
+        "patient_id": "P003",
+        "patient_name": "Kishore",
+        "doctor_id": "D003",
+        "symptoms": "Diabetes follow-up",
+        "tests_ordered": [
+            "sugar_test"
+        ],
+        "ai_results": {
+            "sugar_test": {
+                "fasting_glucose": 71.0,
+                "postprandial_glucose": 91.0,
+                "hba1c": 5.3,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal",
+        "status": "Pending Review",
+        "rag_explanation": "--- Test: sugar_test ---\nAI result summary:\n- Parsed lab data: {'fasting_glucose': 71.0, 'postprandial_glucose': 91.0, 'hba1c': 5.3, 'severity': 'Normal'}\n- Lab severity: Normal\n\nRelevant guideline summary:\nDiabetes \u2013 Clinical Interpretation & Actions\n\n1. Key lab values:\n   \u2022 Fasting Plasma Glucose (FPG):\n     - Normal: < 100 mg/dL\n     - Prediabetes: 100\u2013125 mg/dL\n     - Diabetes: \u2265 126 mg/dL (on two separate occasions)\n   \u2022 Postprandial Glucose (PPG, 2 hours after meal):\n     - Normal: < 140 mg/dL\n     - Prediabetes: 140\u2013199 mg/dL\n     - Diabetes: \u2265 200 mg/dL\n   \u2022 HbA1c:\n     - Normal: < 5.7%\n     - Prediabetes: 5.7\u20136.4%\n     - Diabetes: \u2265 6.5%\n\n2. Mild abnormality (Prediabetes):\n   - Typical pattern: borderline high fasting or PP or HbA1c in 5.7\u20136.4 range.\n   - Clinical action:\n     \u2022 Lifestyle advice (diet, exercise, weight control).\n     \u2022 Repeat test in 3\u20136 months.\n     \u2022 Consider early endocrinology referral if strong family history, obesity, or other risk factors.\n\n3. Severe abnormality (Diabetes range):\n   - Any of:\n     \u2022 FPG \u2265 126 mg/dL\n     \u2022 PP \u2265 200 mg/dL\n     \u2022 HbA1c \u2265 6.5%\n   - Clinical action:\n     \u2022 Confirm with repeat test (if not already confirmed).\n     \u2022 Start diabetes management plan as per local protocol.\n     \u2022 Refer to diabetologist / general physician.\n     \u2022 Educate patient about diet, foot care, eye screening, and regular follow-up.\n\n4. When values are fully normal:\n   - Clinical action:\n     \u2022 Reassure patient.\n     \u2022 Advise routine annual checkup if risk factors present.\n     \u2022 If patient is already diabetic on treatment but results are normal, continue same medication and follow-up schedule unless symptoms suggest otherwise.\n\nOverall AI severity for this patient: Normal\nNOTE: This is clinical decision support, final decision is by the doctor."
+    },
+    "P004": {
+        "patient_id": "P004",
+        "patient_name": "Mahesh",
+        "doctor_id": "D006",
+        "symptoms": "Thyroid imbalance",
+        "tests_ordered": [
+            "thyroid_test"
+        ],
+        "ai_results": {
+            "thyroid_test": {
+                "T3": 0.63,
+                "T4": 4.39,
+                "TSH": 7.18,
+                "severity": "Mild"
+            }
+        },
+        "final_severity": "Mild",
+        "status": "Pending Review",
+        "rag_explanation": "--- Test: thyroid_test ---\nAI result summary:\n- Parsed lab data: {'T3': 0.63, 'T4': 4.39, 'TSH': 7.18, 'severity': 'Mild'}\n- Lab severity: Mild\n\nRelevant guideline summary:\nThyroid Function \u2013 Interpretation & Actions\n\n1. Key parameters:\n   \u2022 TSH (Thyroid Stimulating Hormone)\n   \u2022 T3 (Triiodothyronine)\n   \u2022 T4 (Thyroxine)\n\n2. Typical reference ranges (may vary by lab):\n   \u2022 TSH:\n     - Normal: ~0.4\u20134.5 mIU/L\n     - Mild abnormal:\n       \u2022 0.1\u20130.39 (possible mild hyperthyroidism)\n       \u2022 4.5\u201310 (possible mild hypothyroidism)\n     - Severe abnormal:\n       \u2022 < 0.1 (marked hyperthyroidism)\n       \u2022 > 10 (marked hypothyroidism)\n\n3. Mild thyroid abnormality:\n   - Lab pattern:\n     \u2022 Slightly high or low TSH with near-normal T3/T4.\n   - Clinical action:\n     \u2022 Correlate with symptoms (fatigue, weight change, palpitations, etc.).\n     \u2022 Repeat test in 6\u20138 weeks to confirm trend.\n     \u2022 Consider starting low-dose treatment if persistent and symptomatic.\n     \u2022 Non-urgent endocrinology referral.\n\n4. Severe thyroid abnormality:\n   - Lab pattern:\n     \u2022 TSH > 10 or < 0.1, often with abnormal T3/T4.\n   - Clinical action:\n     \u2022 Endocrinology referral recommended.\n     \u2022 Start treatment as per protocol.\n     \u2022 Monitor for cardiac and metabolic complications.\n     \u2022 Urgent review if patient is pregnant or has cardiac disease.\n\n5. Normal thyroid profile:\n   - Clinical action:\n     \u2022 Reassure patient.\n     \u2022 No specific thyroid treatment required.\n     \u2022 If symptoms persist, consider non-thyroidal causes (anemia, depression, etc.).\n\nOverall AI severity for this patient: Mild\nNOTE: This is clinical decision support, final decision is by the doctor."
+    },
+    "P005": {
+        "patient_id": "P005",
+        "patient_name": "Ramesh",
+        "doctor_id": "D003",
+        "symptoms": "High blood pressure",
+        "tests_ordered": [
+            "bp_test"
+        ],
+        "ai_results": {
+            "bp_test": {
+                "systolic": null,
+                "diastolic": null,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal",
+        "status": "Pending Review",
+        "rag_explanation": "--- Test: bp_test ---\nAI result summary:\n- Parsed lab data: {'systolic': None, 'diastolic': None, 'severity': 'Normal'}\n- Lab severity: Normal\n\nRelevant guideline summary:\nBlood Pressure \u2013 Interpretation & Actions (Adults)\n\n1. Typical categories (office readings):\n   \u2022 Normal:\n     - Systolic < 120 mmHg AND Diastolic < 80 mmHg\n   \u2022 Prehypertension / Elevated:\n     - Systolic 120\u2013139 OR Diastolic 80\u201389 mmHg\n   \u2022 Hypertension:\n     - Systolic \u2265 140 OR Diastolic \u2265 90 mmHg\n\n2. Mild elevation:\n   \u2022 120\u2013139 / 80\u201389.\n   - Clinical action:\n     \u2022 Lifestyle modification (salt restriction, exercise, weight control).\n     \u2022 Repeat measurements on different days.\n     \u2022 No emergency if asymptomatic.\n\n3. Severe elevation:\n   \u2022 \u2265 140/90 on multiple readings.\n   - Clinical action:\n     \u2022 Evaluate for chronic hypertension.\n     \u2022 Start or adjust antihypertensive medication as per guidelines.\n     \u2022 Screen for end organ damage (eyes, kidneys, heart).\n\n4. Hypertensive emergency (for awareness):\n   \u2022 Very high BP with organ damage (e.g., chest pain, breathlessness, neurological deficit).\n   - Clinical action:\n     \u2022 Immediate referral to emergency / ICU.\n     \u2022 IV medications in hospital setting (not managed by this AI system).\n\n5. Normal BP report:\n   \u2022 Clinical action:\n     \u2022 Reassure patient.\n     \u2022 Continue current medication if already on treatment and BP is controlled.\n     \u2022 Routine follow-up as per physician advice.\n\nOverall AI severity for this patient: Normal\nNOTE: This is clinical decision support, final decision is by the doctor."
+    },
+    "P006": {
+        "patient_id": "P006",
+        "patient_name": "Karan",
+        "doctor_id": "D001",
+        "symptoms": "Severe headache with vomiting",
+        "tests_ordered": [
+            "ct_scan"
+        ],
+        "ai_results": {
+            "ct_scan": {
+                "predicted_label": "meningioma",
+                "confidence": 0.9854044318199158
+            }
+        },
+        "final_severity": "Severe",
+        "status": "Approved",
+        "rag_explanation": "--- Test: ct_scan ---\nAI result summary:\n- CT classification: meningioma (confidence 0.99)\n\nRelevant guideline summary:\nCT Brain \u2013 Tumor Type Overview & Actions\n\n1. Common brain lesions in your model:\n   \u2022 Glioma\n   \u2022 Meningioma\n   \u2022 Pituitary lesion\n   \u2022 No tumor (notumor)\n\n2. Glioma:\n   \u2022 Often infiltrative brain tumor; may be low or high grade.\n   \u2022 Symptoms: seizures, headache, neurological deficits.\n   \u2022 CT/ MRI usually required for further characterization.\n   - Clinical action:\n     \u2022 Refer to neurosurgeon / neuro-oncologist.\n     \u2022 MRI brain with contrast usually recommended.\n     \u2022 Further management based on neurosurgical opinion and histopathology.\n\n3. Meningioma:\n   \u2022 Typically extra-axial, often benign but may cause mass effect.\n   \u2022 Symptoms: depends on location; headache, focal deficits, seizures.\n   - Clinical action:\n     \u2022 Neurosurgical or neuro-oncology referral.\n     \u2022 MRI for better definition.\n     \u2022 Management may be observation or surgery based on size and symptoms.\n\n4. Pituitary tumor:\n   \u2022 Located in sellar region.\n   \u2022 May cause hormonal imbalance or visual symptoms.\n   - Clinical action:\n     \u2022 Endocrinology and neurosurgery referral.\n     \u2022 MRI sella with contrast.\n     \u2022 Hormonal workup (prolactin, cortisol, etc.) as per protocol.\n\n5. No tumor (notumor class):\n   \u2022 AI model did not detect a mass lesion.\n   - Clinical action:\n     \u2022 Correlate with symptoms; CT may still show non-tumor pathology (e.g., bleed, infarct) which AI is not classifying.\n     \u2022 If CT is otherwise normal and symptoms are mild, outpatient follow-up is reasonable.\n     \u2022 Urgent referral if red-flag symptoms present (sudden severe headache, neurological deficit, seizures).\n\nIMPORTANT:\n   \u2022 AI output is not a final diagnosis.\n   \u2022 All CT findings must be reviewed and confirmed by a radiologist.\n\nOverall AI severity for this patient: Severe\nNOTE: This is clinical decision support, final decision is by the doctor.",
+        "approved_by": "D001"
+    }
+}

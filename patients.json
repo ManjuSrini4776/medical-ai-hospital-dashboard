@@ -1,0 +1,44 @@
+{
+    "P001": {
+        "name": "Priya",
+        "gender": "Female",
+        "age": 25,
+        "doctor_id": "D005",
+        "symptoms": "Pregnancy 5th month"
+    },
+    "P002": {
+        "name": "Durga",
+        "gender": "Female",
+        "age": 28,
+        "doctor_id": "D002",
+        "symptoms": "Lower abdominal pain"
+    },
+    "P003": {
+        "name": "Kishore",
+        "gender": "Male",
+        "age": 45,
+        "doctor_id": "D003",
+        "symptoms": "Diabetes follow-up"
+    },
+    "P004": {
+        "name": "Mahesh",
+        "gender": "Male",
+        "age": 40,
+        "doctor_id": "D006",
+        "symptoms": "Thyroid imbalance"
+    },
+    "P005": {
+        "name": "Ramesh",
+        "gender": "Male",
+        "age": 55,
+        "doctor_id": "D003",
+        "symptoms": "High blood pressure"
+    },
+    "P006": {
+        "name": "Karan",
+        "gender": "Male",
+        "age": 32,
+        "doctor_id": "D001",
+        "symptoms": "Severe headache with vomiting"
+    }
+}

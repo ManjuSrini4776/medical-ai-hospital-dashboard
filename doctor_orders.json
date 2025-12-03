@@ -1,0 +1,40 @@
+{
+    "P001": {
+        "doctor_id": "D005",
+        "tests_ordered": [
+            "ultrasound",
+            "blood_test"
+        ]
+    },
+    "P002": {
+        "doctor_id": "D002",
+        "tests_ordered": [
+            "ultrasound",
+            "urine_test"
+        ]
+    },
+    "P003": {
+        "doctor_id": "D003",
+        "tests_ordered": [
+            "sugar_test"
+        ]
+    },
+    "P004": {
+        "doctor_id": "D006",
+        "tests_ordered": [
+            "thyroid_test"
+        ]
+    },
+    "P005": {
+        "doctor_id": "D003",
+        "tests_ordered": [
+            "bp_test"
+        ]
+    },
+    "P006": {
+        "doctor_id": "D001",
+        "tests_ordered": [
+            "ct_scan"
+        ]
+    }
+}

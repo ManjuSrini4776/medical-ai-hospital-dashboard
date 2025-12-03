@@ -1,0 +1,75 @@
+{
+    "P001": {
+        "tests": {
+            "ultrasound": {
+                "predicted_plane": "Fetal abdomen",
+                "confidence": 1.0
+            },
+            "blood_test": {
+                "fasting_glucose": 71.0,
+                "postprandial_glucose": 91.0,
+                "hba1c": 5.3,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal"
+    },
+    "P002": {
+        "tests": {
+            "ultrasound": {
+                "predicted_plane": "Fetal abdomen",
+                "confidence": 1.0
+            },
+            "urine_test": {
+                "pH": "6.7",
+                "specific_gravity": "1.01",
+                "protein": "Negative",
+                "sugar": "Negative",
+                "ketones": null,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal"
+    },
+    "P003": {
+        "tests": {
+            "sugar_test": {
+                "fasting_glucose": 71.0,
+                "postprandial_glucose": 91.0,
+                "hba1c": 5.3,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal"
+    },
+    "P004": {
+        "tests": {
+            "thyroid_test": {
+                "T3": 0.63,
+                "T4": 4.39,
+                "TSH": 7.18,
+                "severity": "Mild"
+            }
+        },
+        "final_severity": "Mild"
+    },
+    "P005": {
+        "tests": {
+            "bp_test": {
+                "systolic": null,
+                "diastolic": null,
+                "severity": "Normal"
+            }
+        },
+        "final_severity": "Normal"
+    },
+    "P006": {
+        "tests": {
+            "ct_scan": {
+                "predicted_label": "meningioma",
+                "confidence": 0.9854044318199158
+            }
+        },
+        "final_severity": "Severe"
+    }
+}
